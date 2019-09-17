@@ -11,4 +11,5 @@ for i in range(0,len(B)):
         break
     else:
         maps[B[i]]=1
+
 print(maps)
