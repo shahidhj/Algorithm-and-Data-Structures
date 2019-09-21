@@ -9,26 +9,30 @@ def checkForNullArray(Array1,Array2):
 
 
 def MergeSortedArray(Array1,Array2):
-    i=1
-    j=1
+    i=0
+    j=0
     MergeArray = []
-    Array1Item = Array1[0]
-    Array2Item = Array2[0]
+    #Array1Item = Array1[0]Array1 =[3,4,6,7,10,15]
+    #Array2 = [1,2,8,14,16]
+    #Array2Item = Array2[0]
     checkForNullArray(Array1,Array2)
-    while Array1Item or Array2Item:
-        if (Array1Item < Array2Item or Array2Item == None):
-            MergeArray.append(Array1Item)
-            Array1Item = Array1[i]
+    while i < len(Array1) and j < len(Array2) :
+        if Array1[i] < Array2[j] :
+            MergeArray.append(Array1[i])
             i+=1
-
         else:
-            MergeArray.append(Array2Item)
-            Array2Item = Array2[j]
+            MergeArray.append(Array2[j])
             j+=1
 
-        print(MergeArray)
+    while j <len(Array2):
+        MergeArray.append((Array2[j]))
+        j+=1
 
+    while i < len(Array1):
+        MergeArray.append(Array1[i])
+        i+=1
+    print(MergeArray)
 
-Array1 = [1,3,5]
-Array2 =[3,4,6]
+Array1 =[3,4,6]
+Array2 = [1,2,8,14,16]
 MergeSortedArray(Array1,Array2)
