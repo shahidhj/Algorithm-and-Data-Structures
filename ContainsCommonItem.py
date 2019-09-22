@@ -1,0 +1,26 @@
+#  Given 2 arrays, create a function that let's a user know (true/false) whether these two arrays contain any common items
+# For Example:
+# const array1 = ['a', 'b', 'c', 'x'];//const array2 = ['z', 'y', 'i'];
+# should return false.
+# -----------
+# const array1 = ['a', 'b', 'c', 'x'];//const array2 = ['z', 'y', 'x'];
+# should return true.
+#
+#  2 parameters - arrays - no size limit
+#  return true or false
+
+def CommonItemArray(Array1,Array2):
+    B ={}
+    for item in Array1:
+        if item not in B.keys():
+            B[item] = 1
+
+    for item in Array2:
+        if item in B.keys():
+            print(item)
+    print(B)
+
+# O(n) implementation
+
+
+CommonItemArray(['a', 'b', 'c', 'x','b'],['z', 'y', 'x'])
