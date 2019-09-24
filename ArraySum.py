@@ -13,4 +13,4 @@ def hasPairWithSum(array,sums):
             B[compliment] =1
 
 
-hasPairWithSum([6,4,3,2,1,7], 9)
+hasPairWithSum([6,4,5,1,3,6], 9)
