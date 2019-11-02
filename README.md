@@ -1,2 +1,2 @@
-# Algorithm-and-Data-Structures
-Different Algorithm questions
+# Implementation of various algorithms using Python
+Commonly asked algorithm questions for interviews
