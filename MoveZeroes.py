@@ -11,3 +11,14 @@ for i in range(len(A)):
         A[i],A[zero] = A[zero],A[i]
         zero+=1
 print(A)
+
+#Alternate Solution
+
+for i in range(len(A)):
+    if A[i]!=0:
+        temp=A[i]
+        A[i] = A[zero]
+        A[zero] = temp
+        zero+=1
+
+print(A)
