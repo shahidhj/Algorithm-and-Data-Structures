@@ -20,7 +20,7 @@ def CommonItemArray(Array1,Array2):
             print(item)
     print(B)
 
-# O(n) implementation
+# O(Array1 + Array2) implementation
 
 
 CommonItemArray(['a', 'b', 'c', 'x','b'],['z', 'y', 'x'])
