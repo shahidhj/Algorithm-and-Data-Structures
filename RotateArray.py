@@ -1,6 +1,6 @@
-def RotateArray(Array1,k):
+def RotateArray(A,K):
     newArray=[]
-    newArray= Array1[k+1::]+Array1[:k+1]
+    newArray= A[-K::] + A[:-K:]
     print(newArray)
 
-RotateArray([1,2,3,4,5,6,7],3)
+RotateArray([-1,-100,3,99],2)
