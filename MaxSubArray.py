@@ -7,14 +7,14 @@
 #Brute force
 Array1 = [-2,1,-3,4,-1,2,1,-5,4]
 
-# Array2=[]
-# for i in range(0,len(Array1),1):
-#     for j in range(i,len(Array1)+1,1):
-#         for k in range(j,len(Array1)+1,1):
-#             Array2.append(sum(Array1[j:k]))
-#             #print(Array1[j:k])
-# print(max(Array2))
-# #O(n^3)
+Array2=[]
+for i in range(0,len(Array1),1):
+    for j in range(i,len(Array1)+1,1):
+        for k in range(j,len(Array1)+1,1):
+            Array2.append(sum(Array1[j:k]))
+            #print(Array1[j:k])
+print(max(Array2))
+#O(n^3)
 
 
 sums=0
