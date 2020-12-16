@@ -18,6 +18,6 @@ def permutationPalindrome(word):
             foundOdd = True
     return True
 
-        
 
-print(permutationPalindrome("tact"))
+
+print(permutationPalindrome("racecar"))
