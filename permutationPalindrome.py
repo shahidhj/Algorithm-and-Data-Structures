@@ -20,4 +20,4 @@ def permutationPalindrome(word):
 
 
 
-print(permutationPalindrome("racecarS"))
+print(permutationPalindrome("racecarSasd"))
