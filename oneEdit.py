@@ -5,7 +5,7 @@
 def oneEdit(str1,str2):
     if len(str1) == len(str2):
         return oneEditReplace(str1,str2)
-    
+
 
 
 def oneEditReplace(str1,str2):
