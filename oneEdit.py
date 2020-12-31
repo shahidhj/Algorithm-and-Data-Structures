@@ -9,7 +9,7 @@ def oneEdit(str1,str2):
 
 
 def oneEditReplace(str1,str2):
-    foundDifference = False
+    foundDifferences = False
     for i in range(len(str1)):
         if str1[i] != str2[i]:
             if foundDifference:
